@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE questions SYSTEM "questions.dtd">
 <questions>
   <question id="jaap001">
     <type>text</type>
@@ -21,7 +22,7 @@
   </question>
   <question id="jaap004">
     <type>radio</type>
-    <title>Cuál ha sido la consola más vendida en la historia.</title>
+    <title>Cual ha sido la consola mas vendida en la historia.</title>
     <option value="vendida">NES</option>
     <option value="vendida">Nintendo DS</option>
     <option value="vendida">Playstation 2</option>
