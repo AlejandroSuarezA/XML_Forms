@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<note xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="correcion.xsd">
+<questions>
+  <question id="jaap001">
+    <type>text</type>
+    <title>Como se llama el protagonista de la saga Monkey Island</title>
+    <answer>Guybrush</answer>
+  </question>
+  <question id="jaap002">
+    <type>text</type>
+    <title>Nombre de la consola de siglas SNES</title>
+    <answer>Super Nintendo Entertainment System</answer>
+  </question>
+  <question id="jaap003">
+    <type>radio</type>
+    <title>Que estilo de juego es Call of Duty</title>
+    <option>Shooter</option>
+    <option>Avenntura Grafica</option>
+    <option>Deportes</option>
+    <option>Creativo</option>
+    <answer>0</answer>
+  </question>
+  <question id="jaap004">
+    <type>radio</type>
+    <title>Cual ha sido la consola mas vendida en la historia.</title>
+    <option>NES</option>
+    <option>Nintendo DS</option>
+    <option>Playstation 2</option>
+    <option>GameBoy</option>
+    <answer>2</answer>
+  </question>
+  <question id="jaap005">
+    <type>checkbox</type>
+    <title>Cuales son las plataformas mas utilizadas para ver contenido sobre videojuegos</title>
+    <option>Vimeo</option>
+    <option>Libros</option>
+    <option>Revistas</option>
+    <option>Twitch</option>
+    <option>Youtube Gaming</option>
+    <answer>3</answer>
+    <answer>4</answer>
+  </question>
+  <question id="jaap006">
+    <type>checkbox</type>
+    <title>Cuales son los colores que aparecen en el titulo de juego Splatoon</title>
+    <option>Rojo</option>
+    <option>Azul</option>
+    <option>Verde</option>
+    <option>Negro</option>
+    <option>Rosa</option>
+    <option>Naranja</option>
+    <answer>1</answer>
+    <answer>2</answer>
+    <answer>5</answer>
+  </question>
+  <question id="jaap007">
+    <type>multiple</type>
+    <title>Para que sistemas operativos funciona Steam</title>
+    <option>Windows</option>
+    <option>Linux</option>
+    <option>OS x</option>
+    <answer>0</answer>
+    <answer>1</answer>
+    <answer>2</answer>
+  </question>
+  <question id="jaap008">
+    <type>multiple</type>
+    <title>Cuales de los siguientes personajes has tenido su propia pelicula con actores reales??</title>
+    <option>Mario</option>
+    <option>Ryu</option>
+    <option>Sonic</option>
+    <option>Link</option>
+    <option>Ezio</option>
+    <answer>0</answer>
+    <answer>1</answer>
+    <answer>4</answer>
+  </question>
+  <question id="jaap009">
+    <type>select</type>
+    <title>Con cuantas entregas cuenta la saga de Kingdom Hearts</title>
+    <option>1</option>
+    <option>5</option>
+    <option>14</option>
+    <option>2</option>
+    <option>12</option>
+    <answer>2</answer>
+  </question>
+  <question id="jaap010">
+    <type>select</type>
+    <title>Con cuantas colas vuela el compañero de Sonic, Tails?</title>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <answer>1</answer>
+  </question>
+</questions>
