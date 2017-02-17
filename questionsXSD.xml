@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<note xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="correcion.xsd">
-<questions>
+<questions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="questions.xsd">
   <question id="jaap001">
     <type>text</type>
     <title>Como se llama el protagonista de la saga Monkey Island</title>
