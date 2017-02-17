@@ -14,19 +14,19 @@
   <question id="jaap003">
     <type>radio</type>
     <title>Que estilo de juego es Call of Duty</title>
-    <option value="estilo">Shooter</option>
-    <option value="estilo">Avenntura Grafica</option>
-    <option value="estilo">Deportes</option>
-    <option value="estilo">Creativo</option>
+    <option>Shooter</option>
+    <option>Avenntura Grafica</option>
+    <option>Deportes</option>
+    <option>Creativo</option>
     <answer>0</answer>
   </question>
   <question id="jaap004">
     <type>radio</type>
     <title>Cual ha sido la consola mas vendida en la historia.</title>
-    <option value="vendida">NES</option>
-    <option value="vendida">Nintendo DS</option>
-    <option value="vendida">Playstation 2</option>
-    <option value="vendida">GameBoy</option>
+    <option>NES</option>
+    <option>Nintendo DS</option>
+    <option>Playstation 2</option>
+    <option>GameBoy</option>
     <answer>2</answer>
   </question>
   <question id="jaap005">
