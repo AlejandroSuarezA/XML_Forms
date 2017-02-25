@@ -7,30 +7,18 @@ var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
 //**************************************************************************************************** 
 //Después de cargar la página (onload) se definen los eventos sobre los elementos entre otras acciones.
 window.onload = function(){ 
-
- //CORREGIR al apretar el botón
- formElement=document.getElementById('formNumero1');
- formElement.onsubmit=function(){
-   inicializar();
-   if (comprobar()){
-    corregirNumber();
-    corregirSelect();
-    corregirCheckbox();
-    presentarNota();
-   }
-   return false;
- }
- 
- //LEER XML de xml/preguntas.xml
- var xhttp = new XMLHttpRequest();
- xhttp.onreadystatechange = function() {
-  if (this.readyState == 4 && this.status == 200) {
-   gestionarXml(this);
-  }
- };
- xhttp.open("GET", "https://raw.githubusercontent.com/AlejandroSuarezA/XML_Forms/master/WebContent/official_docs/questions.xml", true);
- xhttp.send();
+	formContainer = document.getElementById('myform');
+	//LEER XML de xml/preguntas.xml
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			gestionarXml(this);
+		}
+	};
+	xhttp.open("GET", "xml/questions.xml", true);
+	xhttp.send();
 }
+
 
 //****************************************************************************************************
 // Recuperamos los datos del fichero XML xml/preguntas.xml
