@@ -1,7 +1,9 @@
-window.onload = function() {
 
-	
-	// Leer el XML con las preguntas del primer examen
+window.onload = function(){ 
+
+
+
+ 
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
