@@ -1,4 +1,4 @@
-input-----*
+input-----*  
 
 checkbox----*
 
@@ -18,5 +18,13 @@ radio2----*
 
 multiple2----
 
+inputs 0 / 6
 
+checkbox 1 / 4
+
+radio 2 / 8
+
+select 3 / 7
+
+multiple  5/ 9
 
