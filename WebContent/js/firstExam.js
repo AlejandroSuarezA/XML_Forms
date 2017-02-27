@@ -1,7 +1,7 @@
+var formBlank = document.getElementById("formNumero1");
 //Después de cargar la página (onload) se definen los eventos sobre los elementos entre otras acciones.
 window.onload = function(){ 
 	
-	var formBlank = document.getElementById("formNumero1");
 	
 	// LEER XML de xml/questions.xml
 	var xhttp = new XMLHttpRequest();
