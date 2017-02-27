@@ -34,7 +34,7 @@ function gestionarXml(dadesXml){
 	 
 	 function questionTextType(question){
 		 var statement = document.createElement("h3");
-		 statement.id = question.getAttributeNode("id");
+		 statement.id = question.attributes;
 		 statement.innerHTML = question.getElementsByTagName("title").innerHTML;
 		 formBlank.appendChild(statement);
 		 
