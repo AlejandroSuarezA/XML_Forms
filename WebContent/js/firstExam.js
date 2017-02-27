@@ -27,15 +27,17 @@ function gestionarXml(dadesXml){
 		 
 		 //var questionType = question.getElementByTagName("type");
 		 
-		 
-		 function questionTextType(question){
-			 var statement = document.createElement("h3");
-			 statement.id = question.getAttribute("id");
-			 statement.innerHTML = question.getElementsByTagName("title").innerHTML;
-			 formBlank.appendChild(statement);
+		 questionTextType(question);
 		 
 	 }
 	 
+	 
+	 function questionTextType(question){
+		 var statement = document.createElement("h3");
+		 statement.id = question.getAttribute("id");
+		 statement.innerHTML = question.getElementsByTagName("title").innerHTML;
+		 formBlank.appendChild(statement);
+		 
 	 
 
 		 
