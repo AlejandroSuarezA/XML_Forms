@@ -21,7 +21,7 @@ function gestionarXml(dadesXml){
 	
 	var xmlDoc = dadesXml.responseXML; //Parsear XML to xmlDoc
 	
-	var questionBundle = xmlDoc.getElementByTagName("questions");
+	var questionBundle = xmlDoc.getElementsByTagName("questions");
 	 
 	 for(question in questionBundle){
 		 
@@ -31,7 +31,7 @@ function gestionarXml(dadesXml){
 		 function questionTextType(question){
 			 var statement = document.createElement("h3");
 			 statement.id = question.getAttribute("id");
-			 statement.innerHTML = question.getElementByTagName("title").innerHTML;
+			 statement.innerHTML = question.getElementsByTagName("title").innerHTML;
 			 formBlank.appendChild(statement);
 		 
 	 }
