@@ -1,11 +1,42 @@
 @CHARSET "UTF-8";
-
-
-form{
-	padding-left: 5%;
-	padding-right: 5%;
+body, html {
+    margin: 0px;
+    background-color: #454545;
 }
 
-body {
-	background-color: #8790A6;
+form {
+    font-size: 6vw;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #93A0A0;
+}
+
+input, select, label, #corregir {
+    font-size: 4vw
+}
+
+.logo {
+    display: inline-block;
+}
+
+p.logo {
+    font-size: 5vw;
+}
+
+#corregir, button {
+    background-color: #D7DAE5;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+[name="noexamen"] {
+    opacity: 0.6;
+    cursor: not-allowed;
 }

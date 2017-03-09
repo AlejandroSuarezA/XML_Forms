@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" href="css/mobile.css">
-<script src="js/firstExam.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel='stylesheet' media='screen and (min-width: 961px)' href='css/desktop.css'>
+	<link rel='stylesheet' media='screen and (max-width: 960px)' href='css/mobile.css'>
+	<script src="js/firstExam.js"></script>
 </head>
+
 <body>
+	<img class="logo" src="" alt="logo perro">
+	<p class="logo">Blind Doge Schools</p>
 	<form id="formNumero1">
+
 
 		<h3 id="input1">Titulo inp 1</h3>
 		<input id="inputText1" type="text"> <br>
@@ -33,7 +40,8 @@
 		<br>
 
 		<h3 id="multiple1">Titulo mult 1</h3>
-		<div id="multipleOptions1"></div>
+		<select multiple id="multipleOptions1">
+		</select>
 		<br>
 		<br>
 
@@ -54,9 +62,12 @@
 
 
 		<h3 id="multiple2">Titulo mult 2</h3>
-		<div id="multipleOptions2"></div>
+		<select multiple id="multipleOptions2">
+		</select>
 		<br>
-		<br> <input type="submit" value="Finish">
+		<br> <input type="submit" value="Finish" id="corregir">
 	</form>
+	<div id='resultadosDiv'></div>
 </body>
+
 </html>
