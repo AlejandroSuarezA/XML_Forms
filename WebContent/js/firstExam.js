@@ -67,96 +67,130 @@ function gestionarXml(dadesXml) {
 
     var tituloSelect1 = xmlDoc.getElementsByTagName("title")[8].innerHTML;
     var opcionesSelect1 = [];
-    var nopt = xmlDoc.getElementById("jaap009").getElementsByTagName('option').length;
-    for (i = 0; i < nopt; i++) {
-        opcionesSelect1[i] = xmlDoc.getElementById("jaap009").getElementsByTagName('option')[i].innerHTML;
-    }
-    ponerDatosSelectHtml(tituloSelect1, 1, opcionesSelect1);
-    respuestaSelect1 = xmlDoc.getElementById("jaap009").getElementsByTagName("answer")[0].innerHTML;
+   
+    var xpath = "/questions/question[8]/option";
+  	var nodes = xmlDoc.evaluate(xpath, xmlDoc, null, XPathResult.ANY_TYPE, null);
+	var result = nodes.iterateNext();
 
+    var indice = 0;
+    while(result){
+      opcionesSelect1[indice] = result.innerHTML;
+      indice++;
+      result = nodes.iterateNext();
+    }
+    
+    ponerDatosSelectHtml(tituloSelect1, 1, opcionesSelect1);
+    
 
     var tituloSelect2 = xmlDoc.getElementsByTagName("title")[9].innerHTML;
     var opcionesSelect2 = [];
-    var nopt2 = xmlDoc.getElementById("jaap010").getElementsByTagName('option').length;
-    for (i = 0; i < nopt2; i++) {
-        opcionesSelect2[i] = xmlDoc.getElementById("jaap010").getElementsByTagName('option')[i].innerHTML;
-    }
-    ponerDatosSelectHtml(tituloSelect2, 2, opcionesSelect2);
-    respuestaSelect2 = xmlDoc.getElementById("jaap010").getElementsByTagName("answer")[0].innerHTML;
+    var xpath = "/questions/question[9]/option";
+  	var nodes = xmlDoc.evaluate(xpath, xmlDoc, null, XPathResult.ANY_TYPE, null);
+	var result = nodes.iterateNext();
 
+    var indice = 0;
+    while(result){
+      opcionesSelect2[indice] = result.innerHTML;
+      indice++;
+      result = nodes.iterateNext();
+    }
+
+    ponerDatosSelectHtml(tituloSelect2, 2, opcionesSelect2);
 
     // Preguntas checkbox
 
     var tituloCheckbox1 = xmlDoc.getElementsByTagName("title")[4].innerHTML;
     var opcionesCheckbox1 = [];
-    var nopt = xmlDoc.getElementById("jaap005").getElementsByTagName('option').length;
-    for (i = 0; i < nopt; i++) {
-        opcionesCheckbox1[i] = xmlDoc.getElementById("jaap005").getElementsByTagName('option')[i].innerHTML;
+    var xpath = "/questions/question[6]/option";
+  	var nodes = xmlDoc.evaluate(xpath, xmlDoc, null, XPathResult.ANY_TYPE, null);
+	var result = nodes.iterateNext();
+
+    var indice = 0;
+    while(result){
+      opcionesCheckbox1[indice] = result.innerHTML;
+      indice++;
+      result = nodes.iterateNext();
     }
+
     ponerDatosCheckboxHtml(tituloCheckbox1, 1, opcionesCheckbox1);
-    var nres = xmlDoc.getElementById("jaap005").getElementsByTagName('answer').length;
-    for (i = 0; i < nres; i++) {
-        respuestaCheckbox1[i] = xmlDoc.getElementById("jaap005").getElementsByTagName("answer")[i].innerHTML;
-    }
 
     var tituloCheckbox2 = xmlDoc.getElementsByTagName("title")[5].innerHTML;
     var opcionesCheckbox2 = [];
-    var nopt2 = xmlDoc.getElementById("jaap006").getElementsByTagName('option').length;
-    for (i = 0; i < nopt2; i++) {
-        opcionesCheckbox2[i] = xmlDoc.getElementById("jaap006").getElementsByTagName('option')[i].innerHTML;
+    var xpath = "/questions/question[6]/option";
+  	var nodes = xmlDoc.evaluate(xpath, xmlDoc, null, XPathResult.ANY_TYPE, null);
+	var result = nodes.iterateNext();
+
+    var indice = 0;
+    while(result){
+      opcionesCheckbox2[indice] = result.innerHTML;
+      indice++;
+      result = nodes.iterateNext();
     }
+
     ponerDatosCheckboxHtml(tituloCheckbox2, 2, opcionesCheckbox2);
-    var nres2 = xmlDoc.getElementById("jaap006").getElementsByTagName('answer').length;
-    for (i = 0; i < nres2; i++) {
-        respuestaCheckbox1[i] = xmlDoc.getElementById("jaap006").getElementsByTagName("answer")[i].innerHTML;
-    }
 
     // Preguntas multiple
 
     var tituloMultiple1 = xmlDoc.getElementsByTagName("title")[6].innerHTML;
     var opcionesMultiple1 = [];
-    var noptmultiple = xmlDoc.getElementById("jaap007").getElementsByTagName('option').length;
-    for (i = 0; i < noptmultiple; i++) {
-        opcionesMultiple1[i] = xmlDoc.getElementById("jaap007").getElementsByTagName('option')[i].innerHTML;
-    }
-    ponerDatosMultipleHtml(tituloMultiple1, 1, opcionesMultiple1);
-    var nres3 = xmlDoc.getElementById("jaap007").getElementsByTagName('answer').length;
-    for (i = 0; i < nres3; i++) {
-        respuestaMultiple1[i] = xmlDoc.getElementById("jaap007").getElementsByTagName("answer")[i].innerHTML;
+    var xpath = "/questions/question[6]/option";
+  	var nodes = xmlDoc.evaluate(xpath, xmlDoc, null, XPathResult.ANY_TYPE, null);
+	var result = nodes.iterateNext();
+
+    var indice = 0;
+    while(result){
+      opcionesMultiple1[indice] = result.innerHTML;
+      indice++;
+      result = nodes.iterateNext();
     }
 
-    var tituloMultiple2 = xmlDoc.getElementsByTagName("title")[7].innerHTML;
+    ponerDatosMultipleHtml(tituloMultiple1, 1, opcionesMultiple1);
+
+	var tituloMultiple2 = xmlDoc.getElementsByTagName("title")[7].innerHTML;
     var opcionesMultiple2 = [];
-    var noptmultiple2 = xmlDoc.getElementById("jaap008").getElementsByTagName('option').length;
-    for (i = 0; i < noptmultiple2; i++) {
-        opcionesMultiple2[i] = xmlDoc.getElementById("jaap008").getElementsByTagName('option')[i].innerHTML;
+    var xpath = "/questions/question[7]/option";
+  	var nodes = xmlDoc.evaluate(xpath, xmlDoc, null, XPathResult.ANY_TYPE, null);
+	var result = nodes.iterateNext();
+
+    var indice = 0;
+    while(result){
+      opcionesMultiple2[indice] = result.innerHTML;
+      indice++;
+      result = nodes.iterateNext();
     }
     ponerDatosMultipleHtml(tituloMultiple2, 2, opcionesMultiple2);
-    var nres4 = xmlDoc.getElementById("jaap007").getElementsByTagName('answer').length;
-    for (i = 0; i < nres4; i++) {
-        respuestaMultiple2[i] = xmlDoc.getElementById("jaap007").getElementsByTagName("answer")[i].innerHTML;
-    }
 
     // Preguntas radio
 
     var tituloRadio1 = xmlDoc.getElementsByTagName("title")[2].innerHTML;
     var opcionesRadio1 = [];
-    var noptradio1 = xmlDoc.getElementById("jaap003").getElementsByTagName('option').length;
-    for (i = 0; i < noptradio1; i++) {
-        opcionesRadio1[i] = xmlDoc.getElementById("jaap003").getElementsByTagName('option')[i].innerHTML;
-    }
-    ponerDatosRadioHtml(tituloRadio1, 1, opcionesRadio1);
-    respuestaRadio1 = xmlDoc.getElementById("jaap003").getElementsByTagName("answer")[0].innerHTML;
+    var xpath = "/questions/question[6]/option";
+    var nodes = xmlDoc.evaluate(xpath, xmlDoc, null, XPathResult.ANY_TYPE, null);
+    var result = nodes.iterateNext();
 
+    var indice = 0;
+    while(result){
+        opcionesRadio1[indice] = result.innerHTML;
+        indice++;
+        result = nodes.iterateNext();
+    }
+
+    ponerDatosRadioHtml(tituloRadio1, 1, opcionesRadio1);
 
     var tituloRadio2 = xmlDoc.getElementsByTagName("title")[3].innerHTML;
     var opcionesRadio2 = [];
-    var noptradio2 = xmlDoc.getElementById("jaap004").getElementsByTagName('option').length;
-    for (i = 0; i < noptradio2; i++) {
-        opcionesRadio2[i] = xmlDoc.getElementById("jaap004").getElementsByTagName('option')[i].innerHTML;
-    }
+    var xpath = "/questions/question[6]/option";
+    var nodes = xmlDoc.evaluate(xpath, xmlDoc, null, XPathResult.ANY_TYPE, null);
+    var result = nodes.iterateNext();
+
+    var indice = 0;
+    while(result){
+    opcionesRadio2[indice] = result.innerHTML;
+    indice++;
+    result = nodes.iterateNext();
+}
     ponerDatosRadioHtml(tituloRadio2, 2, opcionesRadio2);
-    respuestaRadio2 = xmlDoc.getElementById("jaap004").getElementsByTagName("answer")[0].innerHTML;
+
 
 }
 
